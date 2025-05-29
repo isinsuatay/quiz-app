@@ -1,0 +1,126 @@
+
+.quiz-title {
+  color: #333;
+  text-align: center;
+}
+
+.answers-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 100px;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background: rgba(255, 255, 255, 0.25); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 10;
+}
+
+.answer-option {
+  display: block;
+  padding: 12px;
+  background-color: #0d6efd;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+  cursor: grab;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.answer-option:hover {
+  background-color: #0b5ed7;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 300px; 
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  left: 0; 
+  width: 100%;
+}
+
+.question-card {
+  background: #ffffff;
+  padding: 20px;
+  border-left: 5px solid #4e73df;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #000000;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 900px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+}
+
+.answer-slot {
+  display: inline-block;
+  min-width: 120px;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin: 0 5px;
+  vertical-align: middle;
+  background-color: #f9f9f9;
+}
+
+.answer-slot.drag-over {
+  background-color: #d1ecf1;
+  border-color: #17a2b8;
+}
+
+
+@media (max-width: 600px) {
+  .answers-container {
+    padding: 15px 10px;
+    box-shadow: none;
+    border-bottom: none;
+    backdrop-filter: none;
+    background: transparent;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+  .quiz-container {
+    padding-top: 100px;
+    left: 0; 
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+  .answers-container {
+    padding: 15px 10px;
+    box-shadow: none;
+    border-bottom: none;
+    backdrop-filter: none;
+    background: transparent;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+  .quiz-container {
+    padding-top: 100px;
+    left: 0; 
+    top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 600px; 
+  }
+}
