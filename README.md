@@ -11,7 +11,7 @@ Vue 3 + TypeScript + Vite kullanılarak geliştirilen interaktif ve modern bir q
 ### 1. Klonla
 
 ```bash
-git clone https://github.com/kullanici-adi/quiz-app.git
+git clone https://github.com/isinsuatay/quiz-app.git
 cd quiz-app
 ```
 ### 2. Bağımlılıkları Kur
