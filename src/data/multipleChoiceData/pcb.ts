@@ -45,11 +45,6 @@ export default [
     correct: "Signal Layer",
   },
   {
-    text: "Bir donanım biriminin performansını artırmak için PCB üzerinde kullanılan kısa, geniş yollar genellikle hangi veri tipine ayrılır?",
-    options: ["Ses sinyalleri", "Güç yolları (Power traces)", "Analog sinyaller", "LED yolları", "İnfrared hatlar"],
-    correct: "Güç yolları (Power traces)",
-  },
-  {
     text: "PCB üzerindeki lehim maskesinin (Solder Mask) temel amacı nedir?",
     options: [
       "Elektrik sinyallerini iletmek",
